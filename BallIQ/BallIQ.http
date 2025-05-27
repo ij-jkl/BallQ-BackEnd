@@ -1,6 +1,0 @@
-@BallIQ_HostAddress = http://localhost:5286
-
-GET {{BallIQ_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
