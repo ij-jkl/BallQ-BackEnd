@@ -3,3 +3,64 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+
+
+# Ignorar archivos de variables de entorno
+.env
+.env.*
+
+# Ignore all files in the obj directory
+**/obj/
+
+# Ignore the obj directory and its contents
+BallQ/obj/
+
+# Ignore DLLs
+*.dll
+
+# Ignore AssemblyInfo files
+**/AssemblyInfo.cs
+
+# Ignore build directories
+bin/
+obj/
+
+# Ignore user-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore Rider specific files
+.idea/
+.idea_modules/
+
+# Ignore other common IDE files
+.vscode/
+
+# Ignore JSON files in the obj directory
+BallQ/obj/*.json
+
+# Ignore cache files in the obj directory
+BallQ/obj/*.cache
+
+# Ignore info files in the obj directory
+BallQ/obj/*.info
+
+# Ignore props files in the obj directory
+BallQ/obj/*.props
+
+# Ignore all files in Debug directory within obj
+BallQ/obj/Debug/
+
+# Optionally, ignore bin directory if it's present and causing issues
+BallQ/bin/
+
+# Ignore other generated files and directories
+BallQ/obj/**/*.cs
+BallQ/obj/**/*.cache
+
+BallQ/bin/Debug/net9.0/BallQ.dll
+BallQ/bin/Debug/net9.0/BallQ.exe
+BallQ/bin/Debug/net9.0/BallQ.pdb
