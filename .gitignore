@@ -64,3 +64,5 @@ BallQ/obj/**/*.cache
 BallQ/bin/Debug/net9.0/BallQ.dll
 BallQ/bin/Debug/net9.0/BallQ.exe
 BallQ/bin/Debug/net9.0/BallQ.pdb
+
+.idea/.idea.BallIQ/.idea/workspace.xml
