@@ -4,3 +4,8 @@ global using DotNetEnv;
 global using Domain.Interfaces;
 global using Infrastructure.Persistance.Repositories;
 global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using System.Threading.Tasks;
+global using Application.Common;
+global using Application.Strikers.Commands.LoadStrikers;
+global using MediatR;
