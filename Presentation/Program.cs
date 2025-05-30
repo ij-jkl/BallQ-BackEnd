@@ -1,4 +1,4 @@
-DotNetEnv.Env.Load();
+EnvLoader.LoadRootEnv();
 
 var builder = WebApplication.CreateBuilder(args);
 
