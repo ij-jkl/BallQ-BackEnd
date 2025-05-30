@@ -2,26 +2,28 @@
 
 public class DataLoadRepository : IDataLoadRepository
 {
-    private readonly IConfiguration _configuration;
-
-    public DataLoadRepository(IConfiguration configuration)
-    {
-        _configuration = configuration;
-    }
-
     public async Task<bool> ExecuteStrikerInsertScriptAsync()
     {
-        string connectionString = _configuration.GetConnectionString("DefaultConnection");
+        EnvLoader.LoadRootEnv();
 
-        string scriptPath = Path.Combine(Directory.GetCurrentDirectory(), "db_scripts", "insert_all_strikers.sql");
+        string connectionString = Environment.GetEnvironmentVariable("MYSQL_CONNECTION_STRING");
+
+        Console.WriteLine("[DEBUG] MYSQL_CONNECTION_STRING = " + connectionString);
+
+        if (string.IsNullOrEmpty(connectionString))
+            throw new InvalidOperationException("MYSQL_CONNECTION_STRING is missing");
+        
+        string scriptPath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "db_scripts", "insert_all_players_final_cleaned.sql"));
+
+        Console.WriteLine("[DEBUG] Script path = " + scriptPath);
 
         if (!File.Exists(scriptPath))
-            return false;
+            throw new FileNotFoundException("SQL script not found at: " + scriptPath);
 
         string sqlScript = await File.ReadAllTextAsync(scriptPath);
 
-        using SqlConnection connection = new(connectionString);
-        using SqlCommand command = new(sqlScript, connection);
+        using var connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+        using var command = new MySql.Data.MySqlClient.MySqlCommand(sqlScript, connection);
 
         await connection.OpenAsync();
         await command.ExecuteNonQueryAsync();
