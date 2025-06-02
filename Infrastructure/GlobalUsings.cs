@@ -1,9 +1,7 @@
-﻿using System;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Test!");
-    }
-}
+﻿global using Domain.Entities;
+global using Microsoft.EntityFrameworkCore;
+global using Infrastructure.Persistance;
+global using Microsoft.EntityFrameworkCore.Design;
+global using System.Data.SqlClient;
+global using Domain.Interfaces;
+global using Microsoft.Extensions.Configuration;
