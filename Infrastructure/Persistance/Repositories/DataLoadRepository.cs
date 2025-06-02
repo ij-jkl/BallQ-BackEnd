@@ -13,7 +13,7 @@ public class DataLoadRepository : IDataLoadRepository
         if (string.IsNullOrEmpty(connectionString))
             throw new InvalidOperationException("MYSQL_CONNECTION_STRING is missing");
         
-        string scriptPath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "db_scripts", "insert_all_players_final_cleaned.sql"));
+        string scriptPath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "db_scripts", "processed_strikers.sql"));
 
         Console.WriteLine("[DEBUG] Script path = " + scriptPath);
 
