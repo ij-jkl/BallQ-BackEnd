@@ -8,6 +8,12 @@ builder.Services.AddScoped<IDataLoadRepository, DataLoadRepository>();
 // MediatR
 builder.Services.AddMediatR(typeof(LoadStrikersCommandHandler));
 
+// AutoMapper
+builder.Services.AddAutoMapper(typeof(Program).Assembly); 
+
+// Mapper Profile
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
 // Swagger + Controllers
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
