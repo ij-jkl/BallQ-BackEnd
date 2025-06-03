@@ -1,4 +1,4 @@
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -13,7 +13,7 @@ INSERT INTO player_stats (
     0.1775731667, 13.05162775, 14.11764706, 50.58823529,
     0.562315028
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -28,7 +28,7 @@ INSERT INTO player_stats (
     0.0, 12.35294118, 15.58441558, 48.05194805,
     0.5588235294
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -43,7 +43,7 @@ INSERT INTO player_stats (
     0.0, 12.52255378, 22.34042553, 51.06382979,
     0.7494795281
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -58,7 +58,7 @@ INSERT INTO player_stats (
     0.3384615385, 14.06153846, 29.54545455, 69.31818182,
     1.076923077
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -73,7 +73,7 @@ INSERT INTO player_stats (
     0.0, 12.3030303, 13.82978723, 47.87234043,
     0.4848484848
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -88,7 +88,7 @@ INSERT INTO player_stats (
     0.03109882516, 13.06150657, 14.14141414, 50.50505051,
     0.6219765031
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -103,7 +103,7 @@ INSERT INTO player_stats (
     0.1672240803, 14.34782609, 16.49484536, 57.73195876,
     0.8026755853
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -118,7 +118,7 @@ INSERT INTO player_stats (
     0.0, 11.82006205, 14.85148515, 48.51485149,
     0.620475698
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -133,7 +133,7 @@ INSERT INTO player_stats (
     0.2243589744, 13.71794872, 15.74074074, 54.62962963,
     0.7692307692
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -148,7 +148,7 @@ INSERT INTO player_stats (
     0.0, 11.75129534, 12.64367816, 54.02298851,
     0.5595854922
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -163,7 +163,7 @@ INSERT INTO player_stats (
     0.1624548736, 13.48375451, 11.11111111, 50.42735043,
     0.5198555957
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -178,7 +178,7 @@ INSERT INTO player_stats (
     0.1672240803, 14.11371237, 20.49180328, 60.6557377,
     0.9364548495
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -193,7 +193,7 @@ INSERT INTO player_stats (
     0.2461899179, 14.77139508, 15.87301587, 55.55555556,
     0.5627198124
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -208,7 +208,7 @@ INSERT INTO player_stats (
     0.2452316076, 16.88594784, 9.278350515, 50.51546392,
     0.4904632153
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -223,7 +223,7 @@ INSERT INTO player_stats (
     0.1736781166, 15.07526052, 15.88785047, 53.27102804,
     0.7989193362
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -238,7 +238,7 @@ INSERT INTO player_stats (
     0.2748091603, 14.83969466, 13.75, 52.5,
     0.6526717557
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -253,7 +253,7 @@ INSERT INTO player_stats (
     0.1002971768, 13.07206538, 18.51851852, 53.7037037,
     0.9695393759
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -268,7 +268,7 @@ INSERT INTO player_stats (
     0.1720183486, 12.97018349, 25.53191489, 54.25531915,
     1.032110092
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -283,7 +283,7 @@ INSERT INTO player_stats (
     0.09775524982, 14.04417089, 22.91666667, 51.04166667,
     1.010137581
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -298,7 +298,7 @@ INSERT INTO player_stats (
     0.2030838661, 14.96051147, 21.11111111, 52.22222222,
     0.8461827755
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -313,7 +313,7 @@ INSERT INTO player_stats (
     0.1371428571, 14.26285714, 21.12676056, 50.70422535,
     0.8228571429
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -328,7 +328,7 @@ INSERT INTO player_stats (
     0.1457489879, 13.22672065, 15.95744681, 58.5106383,
     0.6194331984
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -343,7 +343,7 @@ INSERT INTO player_stats (
     0.1039661147, 12.33731228, 29.41176471, 61.17647059,
     0.9703504043
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -358,7 +358,7 @@ INSERT INTO player_stats (
     0.06965944272, 12.2252322, 26.66666667, 57.33333333,
     0.9055727554
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -373,7 +373,7 @@ INSERT INTO player_stats (
     0.0, 11.65517241, 12.87128713, 51.48514851,
     0.6206896552
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -388,7 +388,7 @@ INSERT INTO player_stats (
     0.4001616815, 16.40662894, 18.26923077, 60.57692308,
     0.9458367017
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -403,7 +403,7 @@ INSERT INTO player_stats (
     0.1428571429, 12.60714286, 8.988764045, 48.31460674,
     0.3928571429
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -418,7 +418,7 @@ INSERT INTO player_stats (
     0.1422924901, 14.15810277, 26.53061224, 59.18367347,
     1.173913043
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -433,7 +433,7 @@ INSERT INTO player_stats (
     0.0, 13.39285714, 10.22727273, 50.0,
     0.5
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -448,7 +448,7 @@ INSERT INTO player_stats (
     0.03571428571, 13.10714286, 16.21621622, 48.64864865,
     0.6071428571
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -463,7 +463,7 @@ INSERT INTO player_stats (
     0.06944444444, 13.33333333, 9.411764706, 55.29411765,
     0.5208333333
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -478,7 +478,7 @@ INSERT INTO player_stats (
     0.0, 12.21428571, 14.13043478, 58.69565217,
     0.6071428571
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -493,7 +493,7 @@ INSERT INTO player_stats (
     0.0, 12.05097087, 26.08695652, 49.27536232,
     0.9101941748
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -508,7 +508,7 @@ INSERT INTO player_stats (
     0.2265100671, 13.6283557, 16.03773585, 57.54716981,
     0.9437919463
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -523,7 +523,7 @@ INSERT INTO player_stats (
     0.1526717557, 12.97709924, 19.09090909, 60.90909091,
     0.9923664122
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -538,7 +538,7 @@ INSERT INTO player_stats (
     0.0, 12.20153784, 20.90909091, 64.54545455,
     1.019830028
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -553,7 +553,7 @@ INSERT INTO player_stats (
     0.03598560576, 13.85445822, 10.47619048, 51.42857143,
     0.5397840864
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -568,7 +568,7 @@ INSERT INTO player_stats (
     0.0, 12.0, 21.42857143, 54.76190476,
     0.8846153846
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -583,7 +583,7 @@ INSERT INTO player_stats (
     0.0, 11.80769231, 8.602150538, 47.31182796,
     0.4230769231
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -598,7 +598,7 @@ INSERT INTO player_stats (
     0.3096774194, 13.35483871, 11.39240506, 50.63291139,
     0.5032258065
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -613,7 +613,7 @@ INSERT INTO player_stats (
     0.0, 12.0610687, 19.76744186, 56.97674419,
     0.8396946565
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -628,7 +628,7 @@ INSERT INTO player_stats (
     0.0, 12.24, 15.18987342, 64.55696203,
     0.6
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -643,7 +643,7 @@ INSERT INTO player_stats (
     0.3194321207, 15.41259982, 31.08108108, 66.21621622,
     1.357586513
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -658,7 +658,7 @@ INSERT INTO player_stats (
     0.0, 12.43838028, 20.0, 48.23529412,
     0.8318661972
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -673,7 +673,7 @@ INSERT INTO player_stats (
     0.2454545455, 14.19545455, 21.12676056, 38.02816901,
     0.8181818182
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -688,7 +688,7 @@ INSERT INTO player_stats (
     0.07819287576, 12.94092094, 12.16216216, 45.94594595,
     0.4300608167
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -703,7 +703,7 @@ INSERT INTO player_stats (
     0.0, 12.88870704, 19.54022989, 44.82758621,
     0.6996726678
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -718,7 +718,7 @@ INSERT INTO player_stats (
     0.4364694471, 16.97866149, 22.22222222, 58.02469136,
     1.003879728
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -733,7 +733,7 @@ INSERT INTO player_stats (
     0.1328086572, 13.8563699, 14.28571429, 52.85714286,
     0.5312346286
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -748,7 +748,7 @@ INSERT INTO player_stats (
     0.0, 13.15290934, 11.82795699, 51.61290323,
     0.6901217862
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -763,7 +763,7 @@ INSERT INTO player_stats (
     0.1682242991, 16.10747664, 17.14285714, 50.0,
     0.9672897196
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -778,7 +778,7 @@ INSERT INTO player_stats (
     0.0, 12.82051282, 10.71428571, 52.38095238,
     0.641025641
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -793,7 +793,7 @@ INSERT INTO player_stats (
     0.2192982456, 14.03508772, 11.26760563, 52.11267606,
     0.7456140351
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -808,7 +808,7 @@ INSERT INTO player_stats (
     0.0, 12.93887531, 11.11111111, 48.61111111,
     0.3960880196
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -823,7 +823,7 @@ INSERT INTO player_stats (
     0.08950770761, 13.87369468, 17.24137931, 46.55172414,
     0.5818000995
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -838,7 +838,7 @@ INSERT INTO player_stats (
     0.3438395415, 12.3782235, 16.47058824, 57.64705882,
     0.7736389685
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -853,7 +853,7 @@ INSERT INTO player_stats (
     0.08230452675, 12.4691358, 17.14285714, 50.0,
     0.6172839506
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -868,7 +868,7 @@ INSERT INTO player_stats (
     0.1386036961, 14.69199179, 7.777777778, 45.55555556,
     0.4158110883
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -883,7 +883,7 @@ INSERT INTO player_stats (
     0.1415836392, 16.84845307, 14.54545455, 45.45454545,
     0.6135291033
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -898,7 +898,7 @@ INSERT INTO player_stats (
     0.0, 12.9369183, 16.66666667, 56.94444444,
     0.6980351603
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -913,7 +913,7 @@ INSERT INTO player_stats (
     0.0, 12.61146497, 21.25, 65.0,
     0.9701126899
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -928,7 +928,7 @@ INSERT INTO player_stats (
     0.0, 14.6366782, 23.37662338, 54.54545455,
     1.156697973
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -943,7 +943,7 @@ INSERT INTO player_stats (
     0.0, 13.56879283, 11.53846154, 46.15384615,
     0.6167633105
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -958,7 +958,7 @@ INSERT INTO player_stats (
     0.0, 13.57219251, 17.07317073, 41.46341463,
     0.7700534759
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -973,7 +973,7 @@ INSERT INTO player_stats (
     0.0, 12.51231527, 24.44444444, 48.88888889,
     0.7389162562
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -988,7 +988,7 @@ INSERT INTO player_stats (
     0.09983361065, 13.52745424, 13.15789474, 53.94736842,
     0.5990016639
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1003,7 +1003,7 @@ INSERT INTO player_stats (
     0.0, 12.44841049, 16.21621622, 58.10810811,
     0.70273285
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1018,7 +1018,7 @@ INSERT INTO player_stats (
     0.3414634146, 15.46341463, 15.25423729, 44.06779661,
     0.6829268293
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1033,7 +1033,7 @@ INSERT INTO player_stats (
     0.4109589041, 13.15068493, 23.72881356, 54.23728814,
     0.9760273973
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1048,7 +1048,7 @@ INSERT INTO player_stats (
     0.5107832009, 15.01702611, 17.46031746, 39.68253968,
     0.7661748014
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1063,7 +1063,7 @@ INSERT INTO player_stats (
     0.04707112971, 14.30962343, 14.28571429, 51.78571429,
     0.4707112971
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1078,7 +1078,7 @@ INSERT INTO player_stats (
     0.1081730769, 15.19831731, 18.30985915, 64.78873239,
     0.9735576923
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1093,7 +1093,7 @@ INSERT INTO player_stats (
     0.0, 13.27596804, 9.259259259, 59.25925926,
     0.442532268
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1108,7 +1108,7 @@ INSERT INTO player_stats (
     0.05214368482, 12.82734647, 12.72727273, 54.54545455,
     0.4692931634
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1123,7 +1123,7 @@ INSERT INTO player_stats (
     0.05373134328, 16.33432836, 12.04819277, 59.03614458,
     0.9671641791
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1138,7 +1138,7 @@ INSERT INTO player_stats (
     0.2380952381, 14.76190476, 7.01754386, 50.87719298,
     0.3571428571
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1153,7 +1153,7 @@ INSERT INTO player_stats (
     0.0, 15.89657488, 5.0, 33.33333333,
     0.483546004
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1168,7 +1168,7 @@ INSERT INTO player_stats (
     0.0, 13.64835165, 20.58823529, 55.88235294,
     1.054945055
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
@@ -1183,7 +1183,7 @@ INSERT INTO player_stats (
     0.0, 11.92857143, 22.22222222, 48.88888889,
     1.0
 );
-INSERT INTO player_stats (
+INSERT INTO strikers (
     Name, Position, Club, Nationality, HeightCm, WeightKg, PreferredFoot, Age,
     Appearances, Subs, Starts, MinutesPlayed, Goals, Shots, ShotsOnTarget,
     Assists, KeyPasses, PassesCompleted, MarketValueMin, MarketValueMax,
