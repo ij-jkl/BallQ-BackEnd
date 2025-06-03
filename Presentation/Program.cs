@@ -14,6 +14,9 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 // Mapper Profile
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
+// Services
+builder.Services.AddScoped<IStrikerRepository, StrikerRepository>();
+
 // Swagger + Controllers
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
