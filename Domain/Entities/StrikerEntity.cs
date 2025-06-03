@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities
 {
-    public class PlayerEntity
+    public class StrikerEntity
     {
         public int Id { get; set; }
 
@@ -90,13 +90,5 @@
 
         [JsonPropertyName("goal_involvement_per_90")]
         public decimal GoalInvolvementPer90 { get; set; }
-
-        [JsonIgnore]
-        public PlayerPositionCategory PositionCategory =>
-            Position.Contains("ST") ? PlayerPositionCategory.Striker :
-            Position.Contains("M") ? PlayerPositionCategory.Midfielder :
-            Position.Contains("D") ? PlayerPositionCategory.Defender :
-            Position.Contains("GK") ? PlayerPositionCategory.Goalkeeper :
-            PlayerPositionCategory.Unknown;
     }
 }

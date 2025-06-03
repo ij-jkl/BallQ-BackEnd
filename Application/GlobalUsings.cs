@@ -5,3 +5,6 @@ global using Domain.Interfaces;
 global using MediatR;
 global using Application.Common.Models.Enum;
 global using AutoMapper;
+global using Application.Strikers.Commands.CreateStriker;
+global using Application.Strikers.Dtos.CommandsDto;
+global using Domain.Entities;

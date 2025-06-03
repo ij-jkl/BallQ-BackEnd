@@ -10,3 +10,4 @@ global using Application.Common;
 global using Application.Strikers.Commands.LoadStrikers;
 global using MediatR;
 global using Application.Common.Mappings;
+global using Application.Strikers.Commands.CreateStriker;
