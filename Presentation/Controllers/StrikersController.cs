@@ -31,4 +31,11 @@ public class StrikersController : ApiControllerBase
         return StatusCode(result.Code, result);
     }
 
+    [HttpGet("get_all_strikers")]
+    public async Task<ActionResult<ResponseObjectJsonDto>> GetAllStrikers([FromQuery] GetAllStrikersQuery getAllStrikersQuery)
+    {
+        var listOfStrikers = await Mediator.Send(getAllStrikersQuery);
+
+        return StatusCode(listOfStrikers.Code, listOfStrikers);
+    }
 }

@@ -34,4 +34,9 @@ public class StrikerRepository : IStrikerRepository
         return strikerEntity;
     }
 
+    public IQueryable<StrikerEntity> AsQueryable()
+    {
+        return _appDbContext.Strikers.AsQueryable();
+    }
+
 }

@@ -9,3 +9,7 @@ global using Application.Strikers.Commands.CreateStriker;
 global using Application.Strikers.Dtos.CommandsDto;
 global using Domain.Entities;
 global using Application.Strikers.Dtos.QueriesDto;
+global using Application.Common.Pagination.Dto;
+global using Application.Common.Pagination.Data;
+global using Application.Common.Pagination.Interface;
+global using Microsoft.EntityFrameworkCore;
