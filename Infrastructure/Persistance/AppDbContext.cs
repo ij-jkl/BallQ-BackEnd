@@ -4,13 +4,13 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-    public DbSet<PlayerEntity> PlayerStats { get; set; }
+    public DbSet<StrikerEntity> Strikers { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        var entity = modelBuilder.Entity<PlayerEntity>();
+        var entity = modelBuilder.Entity<StrikerEntity>();
 
-        entity.ToTable("player_stats");
+        entity.ToTable("strikers");
         
         entity.HasKey(p => p.Id);
         entity.Property(p => p.Id).HasColumnName("Id").ValueGeneratedOnAdd();

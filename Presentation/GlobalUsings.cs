@@ -1,6 +1,5 @@
 ﻿global using Infrastructure.Persistance;
 global using Microsoft.EntityFrameworkCore;
-global using DotNetEnv;
 global using Domain.Interfaces;
 global using Infrastructure.Persistance.Repositories;
 global using MediatR;
@@ -10,3 +9,8 @@ global using Application.Common;
 global using Application.Strikers.Commands.LoadStrikers;
 global using MediatR;
 global using Application.Common.Mappings;
+global using Application.Strikers.Commands.CreateStriker;
+global using Application.Strikers.Commands.UpdateStriker;
+global using Application.Strikers.Queries;
+global using Application.Common.Pagination.Interface;
+global using Application.Common.Pagination.Service;

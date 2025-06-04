@@ -1,3 +1,4 @@
+// Load MYSQL_CONNECTION_STRING before building the application
 EnvLoader.LoadRootEnv();
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,10 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 // Mapper Profile
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+// Services
+builder.Services.AddScoped<IStrikerRepository, StrikerRepository>();
+builder.Services.AddScoped<IPaginationService, PaginationService>();
 
 // Swagger + Controllers
 builder.Services.AddEndpointsApiExplorer();
