@@ -1,6 +1,4 @@
-﻿using Application.Common.Pagination.Data;
-
-namespace Application.Common.Pagination.Dto;
+﻿namespace Application.Common.Pagination.Dto;
 
 public class PaginationDto<T>
 {
