@@ -8,3 +8,4 @@ global using AutoMapper;
 global using Application.Strikers.Commands.CreateStriker;
 global using Application.Strikers.Dtos.CommandsDto;
 global using Domain.Entities;
+global using Application.Strikers.Dtos.QueriesDto;
