@@ -16,4 +16,22 @@ public class StrikerRepository : IStrikerRepository
         
         return strikerEntity;
     }
+
+    public async Task<StrikerEntity> GetById(int id)
+    {
+        return await _appDbContext.Strikers.FindAsync(id);
+    }
+    
+    public async Task<StrikerEntity> Update(StrikerEntity strikerEntity)
+    {
+        
+        if (_appDbContext.Entry(strikerEntity).State == EntityState.Detached)
+        {
+            _appDbContext.Strikers.Attach(strikerEntity);
+        }
+        
+        await _appDbContext.SaveChangesAsync();
+        return strikerEntity;
+    }
+
 }

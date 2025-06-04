@@ -6,5 +6,6 @@ public class MappingProfile : Profile
     {
         CreateMap<CreateStrikerCommand, StrikerEntity>().ReverseMap();
         CreateMap<CreateStrikerDto, StrikerEntity>().ReverseMap();
+        CreateMap<UpdateStrikerDto, StrikerEntity>().ReverseMap();
     }
 }

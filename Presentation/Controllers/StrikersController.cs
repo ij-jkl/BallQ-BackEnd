@@ -12,4 +12,12 @@ public class StrikersController : ApiControllerBase
         
         return StatusCode(createStriker.Code, createStriker);
     }
+    
+    [HttpPut]
+    public async Task<ActionResult<ResponseObjectJsonDto>> UpdateStriker([FromBody] UpdateStrikerCommand updateStrikerCommand)
+    {
+        var updateStriker = await Mediator.Send(updateStrikerCommand);
+        
+        return StatusCode(updateStriker.Code, updateStriker);
+    }
 }
