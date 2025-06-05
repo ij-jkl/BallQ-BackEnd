@@ -5,7 +5,8 @@ public class AppDbContext : DbContext
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     public DbSet<StrikerEntity> Strikers { get; set; }
-
+    public DbSet<StrikerRating> StrikerRatings { get; set; }
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         var entity = modelBuilder.Entity<StrikerEntity>();
@@ -44,6 +45,27 @@ public class AppDbContext : DbContext
         entity.Property(p => p.ConversionRate).HasColumnName("ConversionRate");
         entity.Property(p => p.ShotAccuracy).HasColumnName("ShotAccuracy");
         entity.Property(p => p.GoalInvolvementPer90).HasColumnName("GoalInvolvementPer90");
+        
+        
+        var ratingEntity = modelBuilder.Entity<StrikerRating>();
+
+        ratingEntity.ToTable("striker_ratings");
+
+        ratingEntity.HasKey(r => r.Id);
+        ratingEntity.Property(r => r.Id).HasColumnName("Id").ValueGeneratedOnAdd();
+
+        ratingEntity.Property(r => r.GoalScore).HasColumnName("GoalScore");
+        ratingEntity.Property(r => r.PassingScore).HasColumnName("PassingScore");
+        ratingEntity.Property(r => r.ShootingScore).HasColumnName("ShootingScore");
+        ratingEntity.Property(r => r.InvolvementScore).HasColumnName("InvolvementScore");
+        ratingEntity.Property(r => r.FinalScore).HasColumnName("FinalScore");
+
+        ratingEntity.Property(r => r.StrikerId).HasColumnName("StrikerId");
+
+        ratingEntity.HasOne(r => r.Striker)
+            .WithOne(s => s.Rating)
+            .HasForeignKey<StrikerRating>(r => r.StrikerId)
+            .HasConstraintName("FK_StrikerRating_Striker");
     }
 }
 // To create the initial migration and update the database, run the following commands in the terminal, after we are going to run everything just by docker compose:
