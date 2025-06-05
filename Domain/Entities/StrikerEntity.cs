@@ -90,5 +90,8 @@
 
         [JsonPropertyName("goal_involvement_per_90")]
         public decimal GoalInvolvementPer90 { get; set; }
+        
+        
+        public StrikerRating? Rating { get; set; }
     }
 }
