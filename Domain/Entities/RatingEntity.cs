@@ -10,6 +10,7 @@ public class RatingEntity
     public double ShootingScore { get; set; }
     public double InvolvementScore { get; set; }
     public double FinalScore { get; set; }
+    
 
     [JsonPropertyName("position")]
     public string Position { get; set; } = string.Empty;

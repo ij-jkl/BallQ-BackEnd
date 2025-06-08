@@ -26,6 +26,17 @@ public class RateAllStrikersCommandHandler : IRequestHandler<RateAllStrikersComm
         try
         {
             var allStrikers = await _strikerRepository.GetAllStrikers();
+            
+            if (allStrikers == null || !allStrikers.Any())
+            {
+                return new ResponseObjectJsonDto
+                {
+                    Code = (int)CodeHttp.NOTFOUND, 
+                    Message = "No strikers found to evaluate.",
+                    Response = null
+                };
+            }
+            
             var ratingsToSave = new List<RatingEntity>();
 
             foreach (var striker in allStrikers)
