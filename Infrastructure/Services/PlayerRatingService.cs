@@ -36,7 +36,7 @@ public class PlayerRatingService<TPlayer, TRating> : IPlayerRatingService<TPlaye
             return Task.FromResult((TRating)rating);
         }
 
-        throw new NotImplementedException("Rating construction not implemented for this player type.");
+        throw new UnsupportedPlayerTypeException(typeof(TPlayer), typeof(TRating));
     }
 
     private double GetConsistencyBonus(TPlayer player)

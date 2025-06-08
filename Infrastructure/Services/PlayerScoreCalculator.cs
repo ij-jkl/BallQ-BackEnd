@@ -14,7 +14,7 @@ public class PlayerScoreCalculator<TPlayer> : IScoreCalculatorService<TPlayer>
         if (player is StrikerEntity s)
             return _normalizer.NormalizeMinMax((double)s.GoalsPer90, 0, 1);
 
-        throw new NotImplementedException("Goal score not supported for this player type.");
+        throw new UnsupportedScoreCalculationException("GoalScore", typeof(TPlayer));
     }
 
     public double CalculateShootingScore(TPlayer player)
@@ -25,7 +25,7 @@ public class PlayerScoreCalculator<TPlayer> : IScoreCalculatorService<TPlayer>
                 s.ConversionRate * 0.4m
             ), 0, 1);
 
-        throw new NotImplementedException("Shooting score not supported for this player type.");
+        throw new UnsupportedScoreCalculationException("ShootingScore", typeof(TPlayer));
     }
 
     public double CalculatePassingScore(TPlayer player)
@@ -36,7 +36,7 @@ public class PlayerScoreCalculator<TPlayer> : IScoreCalculatorService<TPlayer>
                 s.AssistsPer90 * 0.4m
             ), 0, 1);
 
-        throw new NotImplementedException("Passing score not supported for this player type.");
+        throw new UnsupportedScoreCalculationException("PassingScore", typeof(TPlayer));
     }
 
     public double CalculateInvolvementScore(TPlayer player)
@@ -53,7 +53,7 @@ public class PlayerScoreCalculator<TPlayer> : IScoreCalculatorService<TPlayer>
             );
         }
 
-        throw new NotImplementedException("Involvement score not supported for this player type.");
+        throw new UnsupportedScoreCalculationException("InvolvementScore", typeof(TPlayer));
     }
 
     public double CalculateFinalScore(double goal, double shooting, double passing, double involvement, double consistencyBonus)
