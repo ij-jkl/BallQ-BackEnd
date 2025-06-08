@@ -11,7 +11,10 @@ public class RateAllStrikersCommandHandler : IRequestHandler<RateAllStrikersComm
     private readonly IPlayerRatingRepository _ratingRepository;
     private readonly IPlayerRatingService<StrikerEntity, RatingEntity> _ratingService;
 
-    public RateAllStrikersCommandHandler(IStrikerRepository strikerRepository, IPlayerRatingRepository ratingRepository,IPlayerRatingService<StrikerEntity, RatingEntity> ratingService)
+    public RateAllStrikersCommandHandler(
+        IStrikerRepository strikerRepository,
+        IPlayerRatingRepository ratingRepository,
+        IPlayerRatingService<StrikerEntity, RatingEntity> ratingService)
     {
         _strikerRepository = strikerRepository;
         _ratingRepository = ratingRepository;
@@ -23,21 +26,20 @@ public class RateAllStrikersCommandHandler : IRequestHandler<RateAllStrikersComm
         try
         {
             var allStrikers = await _strikerRepository.GetAllStrikers();
-
-            var ratings = new List<RatingEntity>();
+            var ratingsToSave = new List<RatingEntity>();
 
             foreach (var striker in allStrikers)
             {
                 var rating = await _ratingService.GenerateStrikerRating(striker, allStrikers);
-                ratings.Add(rating);
+                ratingsToSave.Add(rating);
             }
 
-            await _ratingRepository.SaveAllStrikers(ratings);
+            await _ratingRepository.SaveAllStrikers(ratingsToSave);
 
             return new ResponseObjectJsonDto
             {
                 Code = 200,
-                Message = "Ratings calculated and saved successfully.",
+                Message = "Ratings calculated and upserted successfully.",
                 Response = null
             };
         }

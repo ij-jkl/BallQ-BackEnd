@@ -2,5 +2,6 @@
 
 public interface IPlayerRatingRepository
 {
-    Task SaveAllStrikers(IEnumerable<RatingEntity> ratings);
+    Task<List<RatingEntity>> GetAllRatings(); 
+    Task SaveAllStrikers(IEnumerable<RatingEntity> ratings); 
 }
