@@ -12,8 +12,8 @@ public class PlayerRatingService<TPlayer, TRating> : IPlayerRatingService<TPlaye
     public Task<TRating> GenerateStrikerRating(TPlayer player, List<TPlayer> allPlayers)
     {
         var goalScore = _calculator.CalculateGoalScore(player);
-        var shootingScore = _calculator.CalculateShootingScore(player);
-        var passingScore = _calculator.CalculatePassingScore(player);
+        var shootingScore = _calculator.CalculateShootingScore(player, allPlayers);
+        var passingScore = _calculator.CalculatePassingScore(player, allPlayers);
         var involvementScore = _calculator.CalculateInvolvementScore(player);
 
         var consistencyBonus = GetConsistencyBonus(player);

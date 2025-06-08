@@ -16,28 +16,37 @@ public class PlayerScoreCalculator<TPlayer> : IScoreCalculatorService<TPlayer>
 
         throw new UnsupportedScoreCalculationException("GoalScore", typeof(TPlayer));
     }
-
-    public double CalculateShootingScore(TPlayer player)
+    
+    public double CalculateShootingScore(TPlayer player, List<TPlayer> allPlayers)
     {
         if (player is StrikerEntity s)
-            return _normalizer.NormalizeMinMax((double)(
-                s.ShotsOnTargetPer90 * 0.6m +
-                s.ConversionRate * 0.4m
-            ), 0, 1);
+        {
+            var values = allPlayers.OfType<StrikerEntity>()
+                .Select(p => (double)(p.ShotsOnTargetPer90 * 0.6m + p.ConversionRate * 0.4m))
+                .ToList();
+
+            var current = (double)(s.ShotsOnTargetPer90 * 0.6m + s.ConversionRate * 0.4m);
+            return _normalizer.NormalizeMinMax(current, values.Min(), values.Max());
+        }
 
         throw new UnsupportedScoreCalculationException("ShootingScore", typeof(TPlayer));
     }
-
-    public double CalculatePassingScore(TPlayer player)
+    
+    public double CalculatePassingScore(TPlayer player, List<TPlayer> allPlayers)
     {
         if (player is StrikerEntity s)
-            return _normalizer.NormalizeMinMax((double)(
-                s.PassesCompletedPer90 * 0.6m +
-                s.AssistsPer90 * 0.4m
-            ), 0, 1);
+        {
+            var values = allPlayers.OfType<StrikerEntity>()
+                .Select(p => (double)(p.PassesCompletedPer90 * 0.6m + p.AssistsPer90 * 0.4m))
+                .ToList();
+
+            var current = (double)(s.PassesCompletedPer90 * 0.6m + s.AssistsPer90 * 0.4m);
+            return _normalizer.NormalizeMinMax(current, values.Min(), values.Max());
+        }
 
         throw new UnsupportedScoreCalculationException("PassingScore", typeof(TPlayer));
     }
+
 
     public double CalculateInvolvementScore(TPlayer player)
     {
