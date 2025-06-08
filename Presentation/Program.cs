@@ -1,8 +1,5 @@
 // Load MYSQL_CONNECTION_STRING before building the application
 
-using Application.Common.Interfaces;
-using Domain.Entities;
-
 EnvLoader.LoadRootEnv();
 
 var builder = WebApplication.CreateBuilder(args);
