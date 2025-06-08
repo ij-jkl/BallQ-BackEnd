@@ -49,7 +49,7 @@ public class AppDbContext : DbContext
         
         var ratingEntity = modelBuilder.Entity<RatingEntity>();
 
-        ratingEntity.ToTable("player_ratings"); // renamed to be generic
+        ratingEntity.ToTable("player_ratings"); 
 
         ratingEntity.HasKey(r => r.Id);
         ratingEntity.Property(r => r.Id)
