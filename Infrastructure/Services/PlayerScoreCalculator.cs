@@ -1,0 +1,67 @@
+﻿namespace Infrastructure.Services;
+
+public class PlayerScoreCalculator<TPlayer> : IScoreCalculatorService<TPlayer>
+{
+    private readonly IStatNormalizerService _normalizer;
+
+    public PlayerScoreCalculator(IStatNormalizerService normalizer)
+    {
+        _normalizer = normalizer;
+    }
+
+    public double CalculateGoalScore(TPlayer player)
+    {
+        if (player is StrikerEntity s)
+            return _normalizer.NormalizeMinMax((double)s.GoalsPer90, 0, 1);
+
+        throw new NotImplementedException("Goal score not supported for this player type.");
+    }
+
+    public double CalculateShootingScore(TPlayer player)
+    {
+        if (player is StrikerEntity s)
+            return _normalizer.NormalizeMinMax((double)(
+                s.ShotsOnTargetPer90 * 0.6m +
+                s.ConversionRate * 0.4m
+            ), 0, 1);
+
+        throw new NotImplementedException("Shooting score not supported for this player type.");
+    }
+
+    public double CalculatePassingScore(TPlayer player)
+    {
+        if (player is StrikerEntity s)
+            return _normalizer.NormalizeMinMax((double)(
+                s.PassesCompletedPer90 * 0.6m +
+                s.AssistsPer90 * 0.4m
+            ), 0, 1);
+
+        throw new NotImplementedException("Passing score not supported for this player type.");
+    }
+
+    public double CalculateInvolvementScore(TPlayer player)
+    {
+        if (player is StrikerEntity s)
+        {
+            var dribblesPer90 = s.MinutesPlayed == 0 ? 0 : s.DribblesMade / (s.MinutesPlayed / 90.0);
+            return _normalizer.NormalizeMinMax(
+                dribblesPer90 * 2 +
+                (double)s.KeyPassesPer90 * 2 +
+                (double)s.GoalInvolvementPer90 * 4 +
+                (s.MinutesPlayed / 90.0) * 1,
+                0, 50
+            );
+        }
+
+        throw new NotImplementedException("Involvement score not supported for this player type.");
+    }
+
+    public double CalculateFinalScore(double goal, double shooting, double passing, double involvement, double consistencyBonus)
+    {
+        return goal * 0.35 +
+               shooting * 0.30 +
+               passing * 0.20 +
+               involvement * 0.10 +
+               consistencyBonus * 0.05;
+    }
+}
