@@ -14,3 +14,5 @@ global using Application.Strikers.Commands.UpdateStriker;
 global using Application.Strikers.Queries;
 global using Application.Common.Pagination.Interface;
 global using Application.Common.Pagination.Service;
+global using Application.RatePlayers.Commands.RateAllStrikers;
+global using Infrastructure.Services;

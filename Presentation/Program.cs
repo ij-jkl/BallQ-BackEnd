@@ -1,4 +1,8 @@
 // Load MYSQL_CONNECTION_STRING before building the application
+
+using Application.Common.Interfaces;
+using Domain.Entities;
+
 EnvLoader.LoadRootEnv();
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +22,11 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 // Services
 builder.Services.AddScoped<IStrikerRepository, StrikerRepository>();
 builder.Services.AddScoped<IPaginationService, PaginationService>();
+builder.Services.AddScoped<IPlayerRatingRepository, PlayerRatingRepository>();
+builder.Services.AddScoped<IScoreCalculatorService<StrikerEntity>, PlayerScoreCalculator<StrikerEntity>>();
+builder.Services.AddScoped<IPlayerRatingService<StrikerEntity, RatingEntity>, PlayerRatingService<StrikerEntity, RatingEntity>>();
+builder.Services.AddScoped<IStatNormalizerService, StatNormalizerService>();
+
 
 // Swagger + Controllers
 builder.Services.AddEndpointsApiExplorer();

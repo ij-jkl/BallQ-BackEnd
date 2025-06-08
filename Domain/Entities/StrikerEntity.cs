@@ -92,6 +92,7 @@
         public decimal GoalInvolvementPer90 { get; set; }
         
         
-        public StrikerRating? Rating { get; set; }
+        [JsonIgnore] 
+        public RatingEntity? Rating { get; set; }
     }
 }
