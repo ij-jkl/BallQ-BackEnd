@@ -5,3 +5,4 @@ global using Microsoft.EntityFrameworkCore.Design;
 global using System.Data.SqlClient;
 global using Domain.Interfaces;
 global using Microsoft.Extensions.Configuration;
+global using Application.Common.Interfaces;

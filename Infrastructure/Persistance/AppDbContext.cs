@@ -5,7 +5,7 @@ public class AppDbContext : DbContext
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     public DbSet<StrikerEntity> Strikers { get; set; }
-    public DbSet<StrikerRating> StrikerRatings { get; set; }
+    public DbSet<RatingEntity> Ratings { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -47,12 +47,14 @@ public class AppDbContext : DbContext
         entity.Property(p => p.GoalInvolvementPer90).HasColumnName("GoalInvolvementPer90");
         
         
-        var ratingEntity = modelBuilder.Entity<StrikerRating>();
+        var ratingEntity = modelBuilder.Entity<RatingEntity>();
 
-        ratingEntity.ToTable("striker_ratings");
+        ratingEntity.ToTable("player_ratings"); // renamed to be generic
 
         ratingEntity.HasKey(r => r.Id);
-        ratingEntity.Property(r => r.Id).HasColumnName("Id").ValueGeneratedOnAdd();
+        ratingEntity.Property(r => r.Id)
+            .HasColumnName("Id")
+            .ValueGeneratedOnAdd();
 
         ratingEntity.Property(r => r.GoalScore).HasColumnName("GoalScore");
         ratingEntity.Property(r => r.PassingScore).HasColumnName("PassingScore");
@@ -60,12 +62,12 @@ public class AppDbContext : DbContext
         ratingEntity.Property(r => r.InvolvementScore).HasColumnName("InvolvementScore");
         ratingEntity.Property(r => r.FinalScore).HasColumnName("FinalScore");
 
-        ratingEntity.Property(r => r.StrikerId).HasColumnName("StrikerId");
+        ratingEntity.Property(r => r.PlayerId).HasColumnName("PlayerId"); 
 
-        ratingEntity.HasOne(r => r.Striker)
-            .WithOne(s => s.Rating)
-            .HasForeignKey<StrikerRating>(r => r.StrikerId)
-            .HasConstraintName("FK_StrikerRating_Striker");
+        ratingEntity.Property(r => r.Position)
+            .HasColumnName("Position")
+            .HasMaxLength(50)
+            .IsRequired();
     }
 }
 // To create the initial migration and update the database, run the following commands in the terminal, after we are going to run everything just by docker compose:

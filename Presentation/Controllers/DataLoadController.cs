@@ -1,7 +1,7 @@
 ﻿namespace Presentation.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/load-data")]
     public class DataLoadController : ApiControllerBase
     {
         [HttpPost("load-strikers")]

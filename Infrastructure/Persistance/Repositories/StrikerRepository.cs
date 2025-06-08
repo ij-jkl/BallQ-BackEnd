@@ -22,6 +22,11 @@ public class StrikerRepository : IStrikerRepository
         return await _appDbContext.Strikers.FindAsync(id);
     }
     
+    public async Task<List<StrikerEntity>> GetAllStrikers()
+    {
+        return await _appDbContext.Strikers.ToListAsync();
+    }
+    
     public async Task<StrikerEntity> Update(StrikerEntity strikerEntity)
     {
         
