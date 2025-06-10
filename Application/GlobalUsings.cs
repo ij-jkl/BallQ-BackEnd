@@ -14,3 +14,4 @@ global using Application.Common.Pagination.Data;
 global using Application.Common.Pagination.Interface;
 global using Microsoft.EntityFrameworkCore;
 global using Application.Common.Interfaces;
+global using Application.RatePlayers.Dtos.QueriesDto;

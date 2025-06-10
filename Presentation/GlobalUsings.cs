@@ -18,3 +18,4 @@ global using Application.RatePlayers.Commands.RateAllStrikers;
 global using Infrastructure.Services;
 global using Application.Common.Interfaces;
 global using Domain.Entities;
+global using Application.RatePlayers.Queries;
