@@ -21,3 +21,5 @@ global using Application.Strikers.Commands.CreateStriker;
 global using Application.RatePlayers.Queries;
 global using Application.RatePlayers.Dtos.QueriesDto;
 global using System.Text.Json;
+global using Application.RatePlayers.Commands.RateAllStrikers;
+global using Application.RatePlayers.Commands.CompareStrikers;
