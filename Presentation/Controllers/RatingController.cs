@@ -1,4 +1,6 @@
-﻿namespace Presentation.Controllers;
+﻿using Application.RatePlayers.Commands.CompareStrikers;
+
+namespace Presentation.Controllers;
 
 [ApiController]
 [Route("api/rating")]
@@ -35,4 +37,13 @@ public class RatingController : ApiControllerBase
         var topRatedStrikers = await Mediator.Send(getTopRatingsQuery);
         return StatusCode(topRatedStrikers.Code, topRatedStrikers);
     }
+    
+    [HttpPut("compare_strikers")]
+    public async Task<ActionResult<ResponseObjectJsonDto>> CompareRatings([FromBody] CompareStrikersCommand compareStrikersCommand)
+    {
+        var ratedStrikersComparison = await Mediator.Send(compareStrikersCommand);
+        
+        return StatusCode(ratedStrikersComparison.Code, ratedStrikersComparison);
+    }
+
 }

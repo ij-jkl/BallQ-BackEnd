@@ -7,4 +7,6 @@ public interface IPlayerRatingRepository
     Task<RatingEntity> GetById(int id);
     Task<List<RatingEntity>> GetTopRatingsAsync(int limit, bool ascending, CancellationToken cancellationToken);
     IQueryable<RatingEntity> AsQueryable();
+    Task<List<RatingEntity>> GetMultiplePlayerByIds(List<int> ids);
+    Task<RatingEntity?> GetRandomPlayerRatings();
 }
