@@ -64,7 +64,7 @@ public class PlayerRatingServiceTest
         {
             Id = 2,
             Starts = 5,
-            Appearances = 0, // Evita división por cero
+            Appearances = 0, 
             Position = "ST"
         };
 

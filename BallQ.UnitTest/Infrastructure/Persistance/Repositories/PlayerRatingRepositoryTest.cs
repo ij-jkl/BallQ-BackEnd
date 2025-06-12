@@ -139,9 +139,9 @@ public class PlayerRatingRepositoryTests
 
         Assert.NotNull(result);
         Assert.Contains(result!.PlayerId, new[] { 30, 31 });
-        Assert.NotEqual(0, result.GoalScore);     // Optional: more reliable than expecting exact value
+        Assert.NotEqual(0, result.GoalScore);    
         Assert.NotEqual(0, result.FinalScore);
-        Assert.NotNull(result.Player);            // Validate Include
+        Assert.NotNull(result.Player);         
     }
 
 
