@@ -1,1 +1,5 @@
 ﻿global using Infrastructure.Services;
+global using Moq;
+global using Application.Common.Interfaces;
+global using Domain.Entities;
+global using Application.Common.Exceptions;
