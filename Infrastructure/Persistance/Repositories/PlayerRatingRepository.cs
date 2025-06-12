@@ -66,4 +66,23 @@
             .ToListAsync(cancellationToken);
     }
 
+    public async Task<List<RatingEntity>> GetMultiplePlayerByIds(List<int> ids)
+    {
+        return await _context.Ratings
+            .Include(r => r.Player)
+            .Where(r => ids.Contains(r.PlayerId))
+            .ToListAsync();
+    }
+
+    public async Task<RatingEntity?> GetRandomPlayerRatings()
+    {
+        var ids = await _context.Ratings.Select(r => r.PlayerId).ToListAsync();
+        if (ids.Count == 0) return null;
+
+        var randomId = ids[new Random().Next(ids.Count)];
+
+        return await _context.Ratings
+            .Include(r => r.Player)
+            .FirstOrDefaultAsync(r => r.PlayerId == randomId);
+    }
 }

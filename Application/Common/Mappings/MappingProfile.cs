@@ -15,5 +15,6 @@ public class MappingProfile : Profile
             .ForMember(dest => dest.Nationality, opt => 
                 opt.MapFrom(src => src.Player != null ? src.Player.Nationality : null));
 
+        CreateMap<RatingComparisonDto, RatingEntity>().ReverseMap();
     }
 }
