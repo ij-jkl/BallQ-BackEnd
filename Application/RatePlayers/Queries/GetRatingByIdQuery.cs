@@ -29,7 +29,7 @@ public class GetRatingByIdQueryHandler : IRequestHandler<GetRatingByIdQuery, Res
                 return new ResponseObjectJsonDto
                 {
                     Code = (int)CodeHttp.NOTFOUND,
-                    Message = $"There rating with ID : ({query.Id})"
+                    Message = $"The rating with ID is : ({query.Id})"
                 };
             }
             
