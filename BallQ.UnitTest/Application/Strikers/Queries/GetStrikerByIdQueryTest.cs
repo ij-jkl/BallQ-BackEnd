@@ -48,7 +48,7 @@ public class GetStrikerByIdQueryTest
         // Assert
         Assert.Equal((int)CodeHttp.NOTFOUND, result.Code);
         Assert.Null(result.Response);
-        Assert.Contains("no striker with ID", result.Message);
+        Assert.Contains($"There is no striker with ID : ({query.Id})", result.Message);
     }
 
     [Fact]

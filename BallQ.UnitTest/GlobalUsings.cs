@@ -14,3 +14,7 @@ global using Domain.Interfaces;
 global using Application.Common.Pagination.Data;
 global using Application.Common.Pagination.Dto;
 global using Application.Common.Pagination.Interface;
+global using Application.Strikers.Commands.UpdateStriker;
+global using Application.Strikers.Dtos.CommandsDto;
+global using Application.Strikers.Commands.LoadStrikers;
+global using Application.Strikers.Commands.CreateStriker;
