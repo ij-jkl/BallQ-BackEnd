@@ -18,3 +18,6 @@ global using Application.Strikers.Commands.UpdateStriker;
 global using Application.Strikers.Dtos.CommandsDto;
 global using Application.Strikers.Commands.LoadStrikers;
 global using Application.Strikers.Commands.CreateStriker;
+global using Application.RatePlayers.Queries;
+global using Application.RatePlayers.Dtos.QueriesDto;
+global using System.Text.Json;
