@@ -68,3 +68,6 @@ BallQ/bin/Debug/net9.0/BallQ.pdb
 
 workspace.xml
 Infrastructure/Migrations/
+
+# Ignore specific files (logs.txt from the setup.sh script)
+logs.txt
