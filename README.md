@@ -1,3 +1,71 @@
+## ⚙️ Initial Setup Instructions
+
+To get started with **BallIQ**, you'll need to do an initial one-time setup that prepares the database, seeds data, and launches the application.
+
+### 🧾 1. Create Your `.env` File
+
+Before anything else, create a `.env` file in the root of the project. You can use the provided `.env.example` as a reference for all required variables (e.g., database credentials, connection strings, etc.).
+
+```bash
+cp .env.example .env
+```
+
+---
+
+### 🛠️ 2. Run the Initialization Script (First-Time Only)
+
+Run the following command from your terminal (**Git Bash** or **WSL** recommended):
+
+```bash
+bash setup.sh
+```
+
+This script will:
+
+- 🔄 Drop and recreate the MySQL database from scratch
+- 🧹 Remove any existing EF Core migrations
+- 🏗️ Rebuild the solution
+- ⚙️ Apply fresh migrations
+- 📥 Insert striker data from `processed_strikers.sql`
+- 🌐 Automatically start the ASP.NET Core app
+- 🚀 Open Swagger in your browser
+
+> ✅ This script is meant to be used **only the first time** you want to initialize the system or when you need a **complete reset** of the environment.
+
+---
+
+### 📌 3. What Happens If You Re-run `setup.sh`?
+
+If you run `setup.sh` again:
+
+- The `Migrations/` folder will be deleted
+- The MySQL database will be dropped and recreated
+- Existing data will be lost
+- The application will reseed fresh striker data
+
+So if you **want data persistence**, do **not** run `setup.sh` again.  
+Instead, simply do:
+
+```bash
+docker-compose up -d
+```
+
+Then run the application from your IDE (e.g., Visual Studio, Rider, or VS Code) to continue working with your existing data.
+
+---
+
+### 📨 4. About the `/api/load-data/load-strikers` Endpoint
+
+The `/api/load-data/load-strikers` endpoint is designed to remain available in the application:
+
+- ✅ You can call it **multiple times** to simulate a large number of striker records
+- 📦 Useful during development or testing before bulk datasets are finalized
+- 🧪 Helps validate filtering, performance, and pagination features with large data volumes
+
+> When the application reaches its final version, this endpoint will no longer be critical — because the system is intended to work with **3,000+ players** across all positions — but for now, it's a handy development tool.
+
+---
+
 # ⚽ BallIQ – Advanced Football Player Analytics Platform
 
 **BallIQ** is a robust football player analytics system currently under active development. It offers a scalable backend built using Clean Architecture principles and will provide detailed statistics, player comparison features, and performance insights through a clean, responsive user interface.
@@ -43,8 +111,8 @@ This project is being built following **Clean Architecture** principles to ensur
 
 ## 📦 Current Features (Backend)
 
-- ✅ Player creation and stat registration (Strikers module) --- (currently developing)
-- ✅ Advanced stat fields: goals, assists, xG, key passes, shot accuracy, and more --- (currently developing)
+- ✅ Player creation and stat registration (Strikers module) — *(currently developing)*
+- ✅ Advanced stat fields: goals, assists, xG, key passes, shot accuracy, and more — *(currently developing)*
 - ✅ Environment-based database config (via `.env`)
 - ✅ API endpoint structure with RESTful design
 - ✅ Swagger UI for exploring endpoints
@@ -66,18 +134,15 @@ This project is being built following **Clean Architecture** principles to ensur
 The frontend will be built immediately after the backend MVP is complete.
 
 ### 🧰 Planned Stack
+
 - **Frontend Framework**: Angular 19 or 20 (latest stable version at development time)
 - **Styling**: SCSS for modular, maintainable styles
 - **Data Visualization**: Recharts or ngx-charts (depending on compatibility)
 - **Routing & State Management**: Angular Router + RxJS and/or NgRx (for reactive state)
 
 ### 🔧 Dashboard Features
-- 📊 **Stat dashboards** to visualize performance metrics  
-- 🔍 **Player comparison interface** for side-by-side evaluations  
-- 🧩 **Search and filtering** by club, nationality, age, and more  
-- 📁 **Responsive UI** designed for analysts, scouts, and coaches  
 
-
----
-
-
+- 📊 **Stat dashboards** to visualize performance metrics
+- 🔍 **Player comparison interface** for side-by-side evaluations
+- 🧩 **Search and filtering** by club, nationality, age, and more
+- 📁 **Responsive UI** designed for analysts, scouts, and coaches
