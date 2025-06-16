@@ -16,3 +16,7 @@ global using Microsoft.EntityFrameworkCore;
 global using Application.Common.Interfaces;
 global using Application.RatePlayers.Dtos.QueriesDto;
 global using Application.Common.Utils;
+global using FluentValidation;
+global using Application.Strikers.Commands.UpdateStriker;
+global using Application.RatePlayers.Commands.CompareStrikers;
+global using Application.RatePlayers.Commands.RateAllStrikers;

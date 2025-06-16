@@ -1,5 +1,4 @@
 // Load MYSQL_CONNECTION_STRING before building the application
-
 EnvLoader.LoadRootEnv();
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,8 +11,6 @@ builder.Services.AddMediatR(typeof(LoadStrikersCommandHandler));
 
 // AutoMapper
 builder.Services.AddAutoMapper(typeof(Program).Assembly); 
-
-// Mapper Profile
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // Services
@@ -24,24 +21,32 @@ builder.Services.AddScoped<IScoreCalculatorService<StrikerEntity>, PlayerScoreCa
 builder.Services.AddScoped<IPlayerRatingService<StrikerEntity, RatingEntity>, PlayerRatingService<StrikerEntity, RatingEntity>>();
 builder.Services.AddScoped<IStatNormalizerService, StatNormalizerService>();
 
-
 // Swagger + Controllers
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers(); 
 
+// Register FluentValidation 
+builder.Services.AddValidatorsFromAssemblyContaining<CreateStrikerCommandValidator>();
+
+// Fluent validation for MediatR
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
 // DB Connection
 var connectionString = Environment.GetEnvironmentVariable("MYSQL_CONNECTION_STRING");
-
 if (string.IsNullOrWhiteSpace(connectionString))
     throw new InvalidOperationException("MYSQL_CONNECTION_STRING is not set in the environment variables (In Run Time).");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 36))));
 
+// Build the app
 var app = builder.Build();
 
-// Middleware
+// Middleware needed for validation exceptions
+app.UseMiddleware<ValidationExceptionMiddleware>();
+
+// Swagger UI
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -49,7 +54,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.MapControllers(); 
-
 app.Run();
