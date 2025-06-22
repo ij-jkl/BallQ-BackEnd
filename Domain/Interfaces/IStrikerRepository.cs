@@ -7,4 +7,5 @@ public interface IStrikerRepository
     Task<StrikerEntity> GetById(int id);
     Task<StrikerEntity> Update(StrikerEntity strikerEntity);
     IQueryable<StrikerEntity> AsQueryable();
+    Task AddRangeAsync(IEnumerable<StrikerEntity> strikers);
 }

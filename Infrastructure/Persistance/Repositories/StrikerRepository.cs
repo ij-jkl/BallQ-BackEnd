@@ -43,4 +43,10 @@ public class StrikerRepository : IStrikerRepository
     {
         return _appDbContext.Strikers.AsQueryable();
     }
+    
+    public async Task AddRangeAsync(IEnumerable<StrikerEntity> strikers)
+    {
+        await _appDbContext.Strikers.AddRangeAsync(strikers);
+        await _appDbContext.SaveChangesAsync();
+    }
 }
