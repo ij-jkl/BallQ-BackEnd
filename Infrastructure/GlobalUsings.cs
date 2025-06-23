@@ -11,3 +11,5 @@ global using Infrastructure.Data.Seeding;
 global using Infrastructure.Persistance.Repositories;
 global using Microsoft.Extensions.DependencyInjection;
 global using Bogus;
+global using System;
+global using System.Collections.Generic;
