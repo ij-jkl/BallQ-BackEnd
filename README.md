@@ -88,7 +88,7 @@ Example:
 
 ```bash
 curl -X POST "http://localhost:5286/api/load-data/load-fake-strikers?quantity=500"
-
+```
 
 
 # ⚽ BallIQ – Advanced Football Player Analytics Platform
