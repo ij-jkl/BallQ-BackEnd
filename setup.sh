@@ -53,7 +53,7 @@ echo -e "${YELLOW}[INFO] Waiting for application to start...${NC}"
 sleep 15
 
 echo -e "${PURPLE}[INFO] Seeding striker data...${NC}"
-curl -X POST http://localhost:5286/api/load-data/load-strikers \
+curl -X POST http://localhost:5286/api/load-data/load-real-strikers \
      -H "Content-Type: application/json" \
      -d '{}'
 

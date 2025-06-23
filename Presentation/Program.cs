@@ -3,6 +3,9 @@ EnvLoader.LoadRootEnv();
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container.
+builder.Services.AddInfrastructure();
+
 // Register application services
 builder.Services.AddScoped<IDataLoadRepository, DataLoadRepository>();
 

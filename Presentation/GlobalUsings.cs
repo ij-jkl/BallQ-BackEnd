@@ -25,3 +25,4 @@ global using Application.Common.Behaviors;
 global using Presentation.Middleware; 
 global using System.Text.Json;
 global using System.Net;
+global using Infrastructure;
