@@ -66,6 +66,31 @@ The `/api/load-data/load-strikers` endpoint is designed to remain available in t
 
 ---
 
+### 🔁 Alternative Seeding: Fake Data Generator
+
+You can now seed the system without relying on a static `.sql` script.
+
+The `/api/load-data/load-fake-strikers` endpoint leverages the `FakeStrikerSeederService`, which:
+
+- 🧠 Dynamically generates striker profiles using realistic stat modeling
+- 🎯 Simulates performance tiers (low → world-class) with position-specific behaviors
+- 💵 Estimates market value based on performance-driven heuristics
+
+This approach is especially useful when:
+
+- You want varied or large volumes of test data
+- You don’t want to maintain or rely on static seed files
+- You're stress-testing sorting, filtering, and pagination performance
+
+> Note: This service is implemented in `FakeStrikerSeederService.cs` and integrated via dependency injection. You can configure the quantity of fake strikers by passing a `quantity` parameter in the request.
+
+Example:
+
+```bash
+curl -X POST "http://localhost:5286/api/load-data/load-fake-strikers?quantity=500"
+
+
+
 # ⚽ BallIQ – Advanced Football Player Analytics Platform
 
 **BallIQ** is a robust football player analytics system currently under active development. It offers a scalable backend built using Clean Architecture principles and will provide detailed statistics, player comparison features, and performance insights through a clean, responsive user interface.
