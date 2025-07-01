@@ -38,4 +38,12 @@ public class StrikersController : ApiControllerBase
 
         return StatusCode(listOfStrikers.Code, listOfStrikers);
     }
+    
+    [HttpGet("search_by_name")]
+    public async Task<IActionResult> SearchStrikersByName([FromQuery] string strikerName)
+    {
+        var strikersByName = await Mediator.Send(new GetStrikerByNameQuery(strikerName));
+        return StatusCode(strikersByName.Code, strikersByName);
+    }
+
 }
